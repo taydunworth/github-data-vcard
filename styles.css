@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:300,500,800');
+
+/*---Default Mobile Styles---*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F3F3F3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Karma', serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 30px 0 0;
+  margin: 0;
+}
+
+
+h1 {
+  font-family: 'Karma', serif;
+  margin: 0;
+  padding: 50px 0 20px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+header {
+  color: #F3F3F3;
+  background-color: #1C1C1C;
+}
+
+header .zig-zag-bottom {
+	margin: 32px 0;
+	margin-top: 0;
+	background: #1C1C1C;
+}
+
+header .zig-zag-bottom:after {
+	background: linear-gradient(-45deg, transparent 16px, #1C1C1C 0), linear-gradient(45deg, transparent 16px, #1C1C1C  0);
+  background-repeat: repeat-x;
+	background-position: left bottom;
+  background-size: 22px 32px;
+  content: "";
+  display: block;
+	width: 100%;
+	height: 32px;
+  position: relative;
+	top:30px;
+	left:0px;
+	}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.topic {
+  font-weight: bold;
+  color: rgb(25, 117, 145);
+}
+
+a {
+  color: rgb(25, 117, 145);
+}
+
+.basics {
+  width: 80%;
+}
+
+.story {
+  width: 80%;
+}
+
+.story-content {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.story-content p {
+  width: 80%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 110px;
+  height: 110px;
+  padding-right 30px;
+  margin: 0px auto;
+}
+
+/*---Tablet Styles---*/
+
+@media ( min-width: 700px ) {
+  .basics {
+    width: 30%;
+  }
+
+  .story {
+    width: 70%;
+  }
+
+  .story-content p {
+    width: 60%;
+  }
+}
+
+/*---Desktop Styles---*/
+
+@media ( min-width: 1000px ) {
+  .basics {
+    width: 40%;
+  }
+
+  .story {
+    width: 50%;
+  }
+
+  .story-content img {
+    margin: 0;
+  }
+
+  .story-content p {
+    width: 60%;
+  }
+}
